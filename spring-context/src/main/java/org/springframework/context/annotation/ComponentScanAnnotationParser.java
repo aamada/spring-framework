@@ -37,6 +37,9 @@ import org.springframework.util.StringUtils;
 /**
  * Parser for the @{@link ComponentScan} annotation.
  *
+ * 一个扫描器, 就是一个类, 而没有什么复杂的接口啊, 类的这些个继承, 看来, 这个类, 在spring里, 没有那么重要的结构性, 算是一个辅助类?
+ * 其实它, 还是将真正的工作给委派出去了, 这里只是进行了一些资源的整合
+ *
  * @author Chris Beams
  * @author Juergen Hoeller
  * @author Sam Brannen
@@ -65,10 +68,16 @@ class ComponentScanAnnotationParser {
 	}
 
 
+	// 它是什么玩意都可以自定义啊
+	// 这里一直只是对这个扫描做一些配置, 当配置好后, 再使用这个扫描器去扫描这个包下的的所有类,
+	// 关键这里就是一些变化 的点, 在这里进行了组装, 而真正灵活的是那个扫描器, 只有扫描器灵活了,
+	// 我们才可以这样子, 去配置它
 	public Set<BeanDefinitionHolder> parse(AnnotationAttributes componentScan, String declaringClass) {
+		// 扫描器, 是否使用默认的过滤器?
 		ClassPathBeanDefinitionScanner scanner = new ClassPathBeanDefinitionScanner(this.registry,
 				componentScan.getBoolean("useDefaultFilters"), this.environment, this.resourceLoader);
 
+		// 名称生成器
 		Class<? extends BeanNameGenerator> generatorClass = componentScan.getClass("nameGenerator");
 		boolean useInheritedGenerator = (BeanNameGenerator.class == generatorClass);
 		scanner.setBeanNameGenerator(useInheritedGenerator ? this.beanNameGenerator :

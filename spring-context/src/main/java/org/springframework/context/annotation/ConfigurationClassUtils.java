@@ -122,11 +122,21 @@ abstract class ConfigurationClassUtils {
 			}
 		}
 
+		// 获得这个类的configuration注解信息
 		Map<String, Object> config = metadata.getAnnotationAttributes(Configuration.class.getName());
+		// @Configuration(proxyBeanMethods = true) => 这样子, 就是完全配置类
 		if (config != null && !Boolean.FALSE.equals(config.get("proxyBeanMethods"))) {
+			// 配置不为null 且 代理工厂=true
+			// 那么这个配置类, 就是完全配置类
 			beanDef.setAttribute(CONFIGURATION_CLASS_ATTRIBUTE, CONFIGURATION_CLASS_FULL);
 		}
 		else if (config != null || isConfigurationCandidate(metadata)) {
+			// 有configuration注解
+			// candidateIndicators.add(Component.class.getName());
+			// candidateIndicators.add(ComponentScan.class.getName());
+			// candidateIndicators.add(Import.class.getName());
+			// candidateIndicators.add(ImportResource.class.getName());
+			// 只要有一个就是轻配置类
 			beanDef.setAttribute(CONFIGURATION_CLASS_ATTRIBUTE, CONFIGURATION_CLASS_LITE);
 		}
 		else {
@@ -134,11 +144,12 @@ abstract class ConfigurationClassUtils {
 		}
 
 		// It's a full or lite configuration candidate... Let's determine the order value, if any.
+		// 获得它的排序值
 		Integer order = getOrder(metadata);
 		if (order != null) {
 			beanDef.setAttribute(ORDER_ATTRIBUTE, order);
 		}
-
+		// 是一个配置类
 		return true;
 	}
 
@@ -151,11 +162,16 @@ abstract class ConfigurationClassUtils {
 	 */
 	public static boolean isConfigurationCandidate(AnnotationMetadata metadata) {
 		// Do not consider an interface or an annotation...
+		// 是接口, 那么返回false
 		if (metadata.isInterface()) {
 			return false;
 		}
 
 		// Any of the typical annotations found?
+//		candidateIndicators.add(Component.class.getName());
+//		candidateIndicators.add(ComponentScan.class.getName());
+//		candidateIndicators.add(Import.class.getName());
+//		candidateIndicators.add(ImportResource.class.getName());
 		for (String indicator : candidateIndicators) {
 			if (metadata.isAnnotated(indicator)) {
 				return true;
@@ -163,6 +179,7 @@ abstract class ConfigurationClassUtils {
 		}
 
 		// Finally, let's look for @Bean methods...
+		// 是否有@Bean注解
 		return hasBeanMethods(metadata);
 	}
 

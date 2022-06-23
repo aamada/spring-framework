@@ -155,18 +155,26 @@ class ConfigurationClassParser {
 	public ConfigurationClassParser(MetadataReaderFactory metadataReaderFactory,
 			ProblemReporter problemReporter, Environment environment, ResourceLoader resourceLoader,
 			BeanNameGenerator componentScanBeanNameGenerator, BeanDefinitionRegistry registry) {
-
+		// 元数据读取工厂
 		this.metadataReaderFactory = metadataReaderFactory;
+		// 问题报告器
 		this.problemReporter = problemReporter;
+		// 环境
 		this.environment = environment;
+		// 资源加载器
 		this.resourceLoader = resourceLoader;
+		// 工厂
 		this.registry = registry;
+		// componnet扫描器
+		// 环境, 资源加载器, 类名生成器, 工厂
 		this.componentScanParser = new ComponentScanAnnotationParser(
 				environment, resourceLoader, componentScanBeanNameGenerator, registry);
+		// 条件表达式
 		this.conditionEvaluator = new ConditionEvaluator(registry, environment, resourceLoader);
 	}
 
 
+	// 解析bean定义持有器
 	public void parse(Set<BeanDefinitionHolder> configCandidates) {
 		for (BeanDefinitionHolder holder : configCandidates) {
 			BeanDefinition bd = holder.getBeanDefinition();
@@ -223,6 +231,7 @@ class ConfigurationClassParser {
 
 
 	protected void processConfigurationClass(ConfigurationClass configClass, Predicate<String> filter) throws IOException {
+		// 是否要跳过呢
 		if (this.conditionEvaluator.shouldSkip(configClass.getMetadata(), ConfigurationPhase.PARSE_CONFIGURATION)) {
 			return;
 		}
@@ -230,6 +239,7 @@ class ConfigurationClassParser {
 		ConfigurationClass existingClass = this.configurationClasses.get(configClass);
 		if (existingClass != null) {
 			if (configClass.isImported()) {
+				// 如果这个类是引入的, 那么整合一下,
 				if (existingClass.isImported()) {
 					existingClass.mergeImportedBy(configClass);
 				}
@@ -239,6 +249,7 @@ class ConfigurationClassParser {
 			else {
 				// Explicit bean definition found, probably replacing an import.
 				// Let's remove the old one and go with the new one.
+				// 将这个旧的移除掉
 				this.configurationClasses.remove(configClass);
 				this.knownSuperclasses.values().removeIf(configClass::equals);
 			}
@@ -247,10 +258,12 @@ class ConfigurationClassParser {
 		// Recursively process the configuration class and its superclass hierarchy.
 		SourceClass sourceClass = asSourceClass(configClass, filter);
 		do {
+			// 处理过这个配置类
 			sourceClass = doProcessConfigurationClass(configClass, sourceClass, filter);
 		}
 		while (sourceClass != null);
 
+		// 添加到容器里面去
 		this.configurationClasses.put(configClass, configClass);
 	}
 
@@ -550,21 +563,27 @@ class ConfigurationClassParser {
 		}
 	}
 
+	// 处理import, 处理配置类, 一个当前的资源class, 一个引入的候选类, 一个过滤器, 检查循环引入
 	private void processImports(ConfigurationClass configClass, SourceClass currentSourceClass,
 			Collection<SourceClass> importCandidates, Predicate<String> exclusionFilter,
 			boolean checkForCircularImports) {
 
+		// 如果为空, 直接返回
 		if (importCandidates.isEmpty()) {
 			return;
 		}
 
 		if (checkForCircularImports && isChainedImportOnStack(configClass)) {
+			// 这里的全部意思是:栈里已经有这个将要引入的配置类了, 这里呢, 又来一个, 起不是循环了么?
 			this.problemReporter.error(new CircularImportProblem(configClass, this.importStack));
 		}
 		else {
+			// 把这个配置类, 给放入至这个栈中去
 			this.importStack.push(configClass);
 			try {
+				// 引入的候选类
 				for (SourceClass candidate : importCandidates) {
+					// 是ImportSelector类
 					if (candidate.isAssignable(ImportSelector.class)) {
 						// Candidate class is an ImportSelector -> delegate to it to determine imports
 						Class<?> candidateClass = candidate.loadClass();
@@ -583,6 +602,7 @@ class ConfigurationClassParser {
 							processImports(configClass, currentSourceClass, importSourceClasses, exclusionFilter, false);
 						}
 					}
+					// 处理这种类ImportBeanDefinitionRegistrar
 					else if (candidate.isAssignable(ImportBeanDefinitionRegistrar.class)) {
 						// Candidate class is an ImportBeanDefinitionRegistrar ->
 						// delegate to it to register additional bean definitions
@@ -595,8 +615,10 @@ class ConfigurationClassParser {
 					else {
 						// Candidate class not an ImportSelector or ImportBeanDefinitionRegistrar ->
 						// process it as an @Configuration class
+						// 如果都不是以上两种情况, 那么它将会是一个配置类
 						this.importStack.registerImport(
 								currentSourceClass.getMetadata(), candidate.getMetadata().getClassName());
+						// 处理这个配置类
 						processConfigurationClass(candidate.asConfigClass(configClass), exclusionFilter);
 					}
 				}
@@ -610,22 +632,30 @@ class ConfigurationClassParser {
 						configClass.getMetadata().getClassName() + "]", ex);
 			}
 			finally {
+				// 处理完成后, 再将这个配置类给移除去
 				this.importStack.pop();
 			}
 		}
 	}
 
+	// 栈里有这个引入的配置类
 	private boolean isChainedImportOnStack(ConfigurationClass configClass) {
+		// 栈里面包含了这个配置类
 		if (this.importStack.contains(configClass)) {
+			// 从配置类上, 拿到这个类名
 			String configClassName = configClass.getMetadata().getClassName();
+			// 从栈里拿到这个配置类
 			AnnotationMetadata importingClass = this.importStack.getImportingClassFor(configClassName);
 			while (importingClass != null) {
+				// 如果这个配置类, 就是要找的, 那么直接返回true
 				if (configClassName.equals(importingClass.getClassName())) {
 					return true;
 				}
+				// 否则一直找, 直到找到, 因为前面已经判断了, 这个栈里, 有这个配置类的
 				importingClass = this.importStack.getImportingClassFor(importingClass.getClassName());
 			}
 		}
+		// 如果没有包含, 那么直接返回false
 		return false;
 	}
 
@@ -709,6 +739,8 @@ class ConfigurationClassParser {
 		@Override
 		@Nullable
 		public AnnotationMetadata getImportingClassFor(String importedClass) {
+			// 先从map里拿出来
+			// 再从这个list的最后拿
 			return CollectionUtils.lastElement(this.imports.get(importedClass));
 		}
 
@@ -744,6 +776,7 @@ class ConfigurationClassParser {
 	}
 
 
+	// 一个内部类, 处理import处理器
 	private class DeferredImportSelectorHandler {
 
 		@Nullable
@@ -775,8 +808,11 @@ class ConfigurationClassParser {
 			try {
 				if (deferredImports != null) {
 					DeferredImportSelectorGroupingHandler handler = new DeferredImportSelectorGroupingHandler();
+					// 比较器
 					deferredImports.sort(DEFERRED_IMPORT_COMPARATOR);
+					// 每一个的去处理
 					deferredImports.forEach(handler::register);
+					// 处理import
 					handler.processGroupImports();
 				}
 			}

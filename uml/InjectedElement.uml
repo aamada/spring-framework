@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.beans.factory.annotation.InjectionMetadata.InjectedElement</OriginalElement>
+  <nodes>
+    <node x="638.0" y="81.0">org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.AutowiredFieldElement</node>
+    <node x="226.0" y="162.0">org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.EjbRefElement</node>
+    <node x="0.0" y="162.0">org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.WebServiceRefElement</node>
+    <node x="872.0" y="81.0">org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.PersistenceElement</node>
+    <node x="396.0" y="162.0">org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.ResourceElement</node>
+    <node x="396.0" y="81.0">org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.AutowiredMethodElement</node>
+    <node x="543.0" y="0.0">org.springframework.beans.factory.annotation.InjectionMetadata.InjectedElement</node>
+    <node x="226.0" y="81.0">org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.LookupElement</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.PersistenceElement" target="org.springframework.beans.factory.annotation.InjectionMetadata.InjectedElement">
+      <point x="0.0" y="-15.5" />
+      <point x="967.0" y="51.0" />
+      <point x="688.25" y="51.0" />
+      <point x="62.25" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.AutowiredFieldElement" target="org.springframework.beans.factory.annotation.InjectionMetadata.InjectedElement">
+      <point x="0.0" y="-15.5" />
+      <point x="745.0" y="61.0" />
+      <point x="646.75" y="61.0" />
+      <point x="20.75" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.AutowiredMethodElement" target="org.springframework.beans.factory.annotation.InjectionMetadata.InjectedElement">
+      <point x="0.0" y="-15.5" />
+      <point x="507.0" y="61.0" />
+      <point x="605.25" y="61.0" />
+      <point x="-20.75" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.LookupElement" target="org.springframework.beans.factory.annotation.InjectionMetadata.InjectedElement">
+      <point x="0.0" y="-15.5" />
+      <point x="301.0" y="51.0" />
+      <point x="563.75" y="51.0" />
+      <point x="-62.25" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.WebServiceRefElement" target="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.LookupElement">
+      <point x="0.0" y="-15.5" />
+      <point x="103.0" y="137.0" />
+      <point x="251.0" y="137.0" />
+      <point x="-50.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.EjbRefElement" target="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.LookupElement">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.ResourceElement" target="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.LookupElement">
+      <point x="0.0" y="-15.5" />
+      <point x="479.0" y="137.0" />
+      <point x="351.0" y="137.0" />
+      <point x="50.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="531.0" y="96.5" />
+  <SelectedNodes>
+    <node>org.springframework.beans.factory.annotation.InjectionMetadata.InjectedElement</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

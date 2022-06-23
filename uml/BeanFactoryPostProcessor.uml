@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.beans.factory.config.BeanFactoryPostProcessor</OriginalElement>
+  <nodes>
+    <node x="4366.25" y="303.0">org.springframework.beans.factory.config.DeprecatedBeanWarnerTests.MyDeprecatedBeanWarner</node>
+    <node x="2939.1" y="384.0">org.springframework.beans.factory.config.PropertyPlaceholderConfigurer</node>
+    <node x="3027.766666666667" y="465.0">org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.PlaceholderResolvingStringValueResolver</node>
+    <node x="162.0" y="303.0">org.springframework.context.weaving.AspectJWeavingEnabler.AspectJClassBypassingClassFileTransformer</node>
+    <node x="2094.875" y="222.0">org.springframework.context.annotation.configuration.MyPostProcessor</node>
+    <node x="4600.25" y="222.0">org.springframework.context.support.BeanFactoryPostProcessorTests.TestBeanFactoryPostProcessor</node>
+    <node x="1828.875" y="222.0">com.test.autoModel.order.ABeanFactoryPostProcessor</node>
+    <node x="2301.8785714285714" y="0.0">java.lang.FunctionalInterface</node>
+    <node x="3405.766666666667" y="465.0">org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.PropertyPlaceholderConfigurerResolver</node>
+    <node x="3245.1" y="303.0">org.springframework.beans.factory.config.PropertyOverrideConfigurer</node>
+    <node x="1301.2535714285714" y="384.0">org.springframework.context.annotation.ConfigurationClassPostProcessor.ImportAwareBeanPostProcessor</node>
+    <node x="1603.2535714285714" y="303.0">org.springframework.context.support.BeanFactoryPostProcessorTests.TestBeanDefinitionRegistryPostProcessor</node>
+    <node x="2705.766666666667" y="465.0">org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer</node>
+    <node x="2454.1285714285714" y="384.0">org.springframework.context.support.PropertySourcesPlaceholderConfigurer</node>
+    <node x="1937.2535714285714" y="384.0">org.springframework.context.support.BeanFactoryPostProcessorTests.PrioritizedOuterBeanDefinitionRegistryPostProcessor</node>
+    <node x="563.8499999999999" y="222.0">com.test.autoModel.order.BBeanFactoryPostProcessor</node>
+    <node x="0.0" y="222.0">org.springframework.beans.factory.config.CustomEditorConfigurer</node>
+    <node x="3504.25" y="222.0">com.test.autoModel.order.CBeanFactoryPostProcessor</node>
+    <node x="829.8499999999999" y="222.0">org.springframework.context.support.BeanFactoryPostProcessorTests.NestingBeanFactoryPostProcessor</node>
+    <node x="1981.2535714285714" y="303.0">org.springframework.context.support.BeanFactoryPostProcessorTests.OuterBeanDefinitionRegistryPostProcessor</node>
+    <node x="2281.8785714285714" y="81.0">org.springframework.beans.factory.config.BeanFactoryPostProcessor</node>
+    <node x="242.0" y="222.0">org.springframework.context.weaving.AspectJWeavingEnabler</node>
+    <node x="3214.25" y="222.0">org.springframework.context.event.EventListenerMethodProcessor</node>
+    <node x="3770.25" y="222.0">org.springframework.beans.factory.config.CustomScopeConfigurer</node>
+    <node x="2940.25" y="222.0">org.springframework.beans.factory.config.PropertyResourceConfigurer</node>
+    <node x="1473.85" y="222.0">org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor</node>
+    <node x="2649.1285714285714" y="303.0">org.springframework.beans.factory.config.PlaceholderConfigurerSupport</node>
+    <node x="2280.875" y="222.0">org.springframework.beans.factory.annotation.CustomAutowireConfigurer</node>
+    <node x="1143.85" y="222.0">org.springframework.context.support.BeanFactoryPostProcessorTests.ListeningBeanFactoryPostProcessor</node>
+    <node x="1289.2535714285714" y="303.0">org.springframework.context.annotation.ConfigurationClassPostProcessor</node>
+    <node x="678.2249999999999" y="303.0">org.springframework.context.support.BeanFactoryPostProcessorTests.PrioritizedBeanDefinitionRegistryPostProcessor</node>
+    <node x="3237.1" y="384.0">org.springframework.beans.factory.config.PropertyResourceConfigurerTests.ConvertingOverrideConfigurer</node>
+    <node x="4374.25" y="222.0">org.springframework.beans.factory.config.DeprecatedBeanWarner</node>
+    <node x="2538.875" y="222.0">com.test.autoModel.util.ModelBeanFactoryPostProcessor</node>
+    <node x="4004.25" y="222.0">org.springframework.context.annotation.ConfigurationWithFactoryBeanBeanEarlyDeductionTests.NameCollectingBeanFactoryPostProcessor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.context.support.BeanFactoryPostProcessorTests.OuterBeanDefinitionRegistryPostProcessor" target="org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="2164.2535714285714" y="273.0" />
+      <point x="1759.1" y="273.0" />
+      <point x="122.25" y="15.5" />
+    </edge>
+    <edge source="com.test.autoModel.order.ABeanFactoryPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="1951.875" y="192.0" />
+      <point x="2372.8785714285714" y="192.0" />
+      <point x="-28.0" y="15.5" />
+    </edge>
+    <edge source="com.test.autoModel.order.BBeanFactoryPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="686.8499999999999" y="152.0" />
+      <point x="2316.8785714285714" y="152.0" />
+      <point x="-84.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.BeanFactoryPostProcessorTests.TestBeanFactoryPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="4735.25" y="132.0" />
+      <point x="2512.8785714285714" y="132.0" />
+      <point x="112.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.PlaceholderResolvingStringValueResolver" target="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+      <point x="0.0" y="-15.5" />
+      <point x="3206.766666666667" y="445.0" />
+      <point x="3078.1" y="445.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.PropertyOverrideConfigurer" target="org.springframework.beans.factory.config.PropertyResourceConfigurer">
+      <point x="0.0" y="-15.5" />
+      <point x="3372.1" y="283.0" />
+      <point x="3130.75" y="283.0" />
+      <point x="63.5" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.BeanFactoryPostProcessorTests.PrioritizedOuterBeanDefinitionRegistryPostProcessor" target="org.springframework.context.support.BeanFactoryPostProcessorTests.OuterBeanDefinitionRegistryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.CustomScopeConfigurer" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="3877.25" y="162.0" />
+      <point x="2470.8785714285714" y="162.0" />
+      <point x="70.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.ConfigurationClassPostProcessor.ImportAwareBeanPostProcessor" target="org.springframework.context.annotation.ConfigurationClassPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.BeanFactoryPostProcessorTests.PrioritizedBeanDefinitionRegistryPostProcessor" target="org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="885.2249999999999" y="273.0" />
+      <point x="1514.6" y="273.0" />
+      <point x="-122.25" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.PropertyResourceConfigurer" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="3067.25" y="192.0" />
+      <point x="2428.8785714285714" y="192.0" />
+      <point x="28.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.PropertyResourceConfigurerTests.ConvertingOverrideConfigurer" target="org.springframework.beans.factory.config.PropertyOverrideConfigurer">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.PreferencesPlaceholderConfigurer" target="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+      <point x="0.0" y="-15.5" />
+      <point x="2856.766666666667" y="445.0" />
+      <point x="2985.4333333333334" y="445.0" />
+      <point x="-92.66666666666652" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.BeanFactoryPostProcessor" target="java.lang.FunctionalInterface">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.BeanFactoryPostProcessorTests.NestingBeanFactoryPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="976.8499999999999" y="162.0" />
+      <point x="2330.8785714285714" y="162.0" />
+      <point x="-70.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.PlaceholderConfigurerSupport" target="org.springframework.beans.factory.config.PropertyResourceConfigurer">
+      <point x="0.0" y="-15.5" />
+      <point x="2784.1285714285714" y="283.0" />
+      <point x="3003.75" y="283.0" />
+      <point x="-63.5" y="15.5" />
+    </edge>
+    <edge source="com.test.autoModel.order.CBeanFactoryPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="3627.25" y="172.0" />
+      <point x="2456.8785714285714" y="172.0" />
+      <point x="56.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.BeanFactoryPostProcessorTests.TestBeanDefinitionRegistryPostProcessor" target="org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="1782.2535714285714" y="283.0" />
+      <point x="1677.6" y="283.0" />
+      <point x="40.75" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.weaving.AspectJWeavingEnabler.AspectJClassBypassingClassFileTransformer" target="org.springframework.context.weaving.AspectJWeavingEnabler">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.weaving.AspectJWeavingEnabler" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="349.0" y="142.0" />
+      <point x="2302.8785714285714" y="142.0" />
+      <point x="-98.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.event.EventListenerMethodProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="3349.25" y="182.0" />
+      <point x="2442.8785714285714" y="182.0" />
+      <point x="42.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.DeprecatedBeanWarner" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="4477.25" y="142.0" />
+      <point x="2498.8785714285714" y="142.0" />
+      <point x="98.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.ConfigurationClassPostProcessor" target="org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="1436.2535714285714" y="283.0" />
+      <point x="1596.1" y="283.0" />
+      <point x="-40.75" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.DeprecatedBeanWarnerTests.MyDeprecatedBeanWarner" target="org.springframework.beans.factory.config.DeprecatedBeanWarner">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer.PropertyPlaceholderConfigurerResolver" target="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+      <point x="0.0" y="-15.5" />
+      <point x="3576.766666666667" y="435.0" />
+      <point x="3170.7666666666664" y="435.0" />
+      <point x="92.66666666666652" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" target="org.springframework.beans.factory.config.PlaceholderConfigurerSupport">
+      <point x="0.0" y="-15.5" />
+      <point x="3078.1" y="359.0" />
+      <point x="2851.6285714285714" y="359.0" />
+      <point x="67.5" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.ConfigurationWithFactoryBeanBeanEarlyDeductionTests.NameCollectingBeanFactoryPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="4179.25" y="152.0" />
+      <point x="2484.8785714285714" y="152.0" />
+      <point x="84.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.support.BeanDefinitionRegistryPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="-2.2737367544323206E-13" y="-15.5" />
+      <point x="1636.85" y="182.0" />
+      <point x="2358.8785714285714" y="182.0" />
+      <point x="-42.0" y="15.5" />
+    </edge>
+    <edge source="com.test.autoModel.util.ModelBeanFactoryPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="2677.875" y="202.0" />
+      <point x="2414.8785714285714" y="202.0" />
+      <point x="14.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.BeanFactoryPostProcessorTests.ListeningBeanFactoryPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="1298.85" y="172.0" />
+      <point x="2344.8785714285714" y="172.0" />
+      <point x="-56.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.configuration.MyPostProcessor" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="2177.875" y="202.0" />
+      <point x="2386.8785714285714" y="202.0" />
+      <point x="-14.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.annotation.CustomAutowireConfigurer" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="2399.875" y="202.0" />
+      <point x="2400.8785714285714" y="202.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.CustomEditorConfigurer" target="org.springframework.beans.factory.config.BeanFactoryPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="111.0" y="132.0" />
+      <point x="2288.8785714285714" y="132.0" />
+      <point x="-112.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.PropertySourcesPlaceholderConfigurer" target="org.springframework.beans.factory.config.PlaceholderConfigurerSupport">
+      <point x="0.0" y="-15.5" />
+      <point x="2621.1285714285714" y="359.0" />
+      <point x="2716.6285714285714" y="359.0" />
+      <point x="-67.5" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.1849620893007582" x="3283.4205469327426" y="252.99999999999994" />
+  <SelectedNodes>
+    <node>org.springframework.beans.factory.config.BeanFactoryPostProcessor</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

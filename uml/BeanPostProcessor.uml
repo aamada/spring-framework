@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.beans.factory.config.BeanPostProcessor</OriginalElement>
+  <nodes>
+    <node x="1862.1875000000002" y="161.0">org.springframework.web.context.support.ServletContextAwareProcessor</node>
+    <node x="6299.218303571429" y="252.0">org.springframework.aop.framework.autoproxy.AbstractBeanFactoryAwareAdvisingPostProcessor</node>
+    <node x="3753.541666666667" y="575.0">org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator</node>
+    <node x="6347.218303571429" y="161.0">org.springframework.aop.framework.AbstractAdvisingBeanPostProcessor</node>
+    <node x="2078.5" y="413.0">org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor</node>
+    <node x="5378.625" y="161.0">org.springframework.context.support.PostProcessorRegistrationDelegate.BeanPostProcessorChecker</node>
+    <node x="1426.5000000000002" y="413.0">org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor</node>
+    <node x="5132.991666666667" y="252.0">org.springframework.context.annotation.ConfigurationClassPostProcessor.ImportAwareBeanPostProcessor</node>
+    <node x="961.0859623015886" y="494.0">org.springframework.context.annotation.CommonAnnotationBeanPostProcessor</node>
+    <node x="3741.541666666667" y="656.0">org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator</node>
+    <node x="4056.625" y="161.0">org.springframework.test.web.servlet.samples.spr.EncodedUriTests.HandlerMappingConfigurer</node>
+    <node x="3306.6250000000005" y="161.0">org.springframework.beans.factory.xml.XmlBeanFactoryTests.WrappingPostProcessor</node>
+    <node x="2152.1875" y="161.0">org.springframework.beans.factory.FactoryBeanTests.CountingPostProcessor</node>
+    <node x="3463.541666666667" y="575.0">org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests.FallbackTestAutoProxyCreator</node>
+    <node x="4926.625" y="161.0">org.springframework.beans.testfixture.beans.LifecycleBean.PostProcessor</node>
+    <node x="1061.1593253968267" y="161.0">org.springframework.jca.context.BootstrapContextAwareProcessor</node>
+    <node x="2956.541666666667" y="413.0">org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor</node>
+    <node x="4151.541666666667" y="413.0">org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator</node>
+    <node x="3524.6250000000005" y="0.0">org.springframework.beans.factory.config.BeanPostProcessor</node>
+    <node x="3338.291666666667" y="413.0">org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor</node>
+    <node x="4461.541666666667" y="575.0">org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator</node>
+    <node x="4314.625" y="161.0">org.springframework.context.weaving.LoadTimeWeaverAwareProcessor</node>
+    <node x="4099.541666666667" y="575.0">org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator</node>
+    <node x="5636.625" y="161.0">org.springframework.context.annotation.ImportAwareTests.BPP</node>
+    <node x="2771.699999999999" y="252.0">org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor</node>
+    <node x="3540.6250000000005" y="161.0">org.springframework.beans.factory.xml.ProtectedLifecycleBean.PostProcessor</node>
+    <node x="5158.166666666667" y="413.0">org.springframework.scripting.support.ScriptFactoryPostProcessor</node>
+    <node x="3048.6250000000005" y="161.0">org.springframework.context.annotation.configuration.DuplicatePostProcessingTests.ExampleBeanPostProcessor</node>
+    <node x="1237.75" y="252.0">org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor</node>
+    <node x="5096.625" y="161.0">org.springframework.validation.beanvalidation.BeanValidationPostProcessor</node>
+    <node x="5602.166666666667" y="413.0">org.springframework.context.annotation.Spr8954Tests.PredictingBPP</node>
+    <node x="6605.385962301589" y="413.0">org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor</node>
+    <node x="3710.6250000000005" y="161.0">org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor</node>
+    <node x="2432.5" y="413.0">org.springframework.jms.annotation.JmsListenerAnnotationBeanPostProcessor</node>
+    <node x="10.5" y="413.0">org.springframework.web.context.request.SessionScopeTests.CustomSerializableDestructionAwareBeanPostProcessor</node>
+    <node x="2940.541666666667" y="494.0">org.springframework.orm.jpa.support.PersistenceInjectionTests.MockPersistenceAnnotationBeanPostProcessor</node>
+    <node x="1136.5" y="413.0">org.springframework.context.annotation.CommonAnnotationBeanPostProcessorTests.InitDestroyBeanPostProcessor</node>
+    <node x="1796.5000000000002" y="413.0">org.springframework.context.support.ApplicationListenerDetector</node>
+    <node x="758.5" y="413.0">org.springframework.web.context.request.SessionScopeTests.CustomDestructionAwareBeanPostProcessor</node>
+    <node x="739.1593253968267" y="161.0">org.springframework.context.support.ApplicationContextAwareProcessor</node>
+    <node x="3342.541666666667" y="494.0">org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests.TestAutoProxyCreator</node>
+    <node x="1532.1875000000002" y="161.0">org.springframework.aop.framework.adapter.AdvisorAdapterRegistrationManager</node>
+    <node x="484.5" y="413.0">org.springframework.web.servlet.handler.SimpleServletPostProcessor</node>
+    <node x="4602.669295634922" y="252.0">org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor</node>
+    <node x="505.1593253968267" y="161.0">org.springframework.scheduling.annotation.EnableAsyncTests.ExecutorPostProcessor</node>
+    <node x="4123.541666666667" y="494.0">org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator</node>
+    <node x="5432.166666666667" y="413.0">org.springframework.beans.factory.support.Spr8954Tests.PredictingBPP</node>
+    <node x="4604.625" y="161.0">org.springframework.context.event.ApplicationContextEventTests.EventPublishingBeanPostProcessor</node>
+    <node x="6677.218303571429" y="161.0">org.springframework.context.annotation.configuration.ConfigurationClassProcessingTests.POBPP</node>
+    <node x="3692.291666666667" y="413.0">org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor</node>
+    <node x="5985.385962301589" y="413.0">org.springframework.validation.beanvalidation.MethodValidationPostProcessor</node>
+    <node x="6283.385962301589" y="413.0">org.springframework.scheduling.annotation.AsyncAnnotationBeanPostProcessor</node>
+    <node x="4409.541666666667" y="413.0">org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessorAdapter</node>
+    <node x="3141.541666666667" y="575.0">org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests.IntroductionTestAutoProxyCreator</node>
+    <node x="4437.541666666667" y="494.0">org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.validation.beanvalidation.BeanValidationPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="5227.625" y="91.0" />
+      <point x="3667.6250000000005" y="91.0" />
+      <point x="52.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.FactoryBeanTests.CountingPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="2259.1875" y="111.0" />
+      <point x="3580.958333333334" y="111.0" />
+      <point x="-34.666666666666515" y="15.5" />
+    </edge>
+    <edge source="org.springframework.scripting.support.ScriptFactoryPostProcessor" target="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="5285.166666666667" y="393.0" />
+      <point x="4837.955009920637" y="393.0" />
+      <point x="52.285714285714675" y="15.5" />
+    </edge>
+    <edge source="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" target="org.springframework.aop.framework.autoproxy.AbstractBeanFactoryAwareAdvisingPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="6804.385962301589" y="393.0" />
+      <point x="6637.551636904762" y="393.0" />
+      <point x="135.33333333333303" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" target="org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor">
+      <point x="-83.5" y="-15.5" />
+      <point x="3421.791666666667" y="313.0" />
+      <point x="3015.2714285714274" y="313.0" />
+      <point x="88.57142857142844" y="15.5" />
+    </edge>
+    <edge source="org.springframework.web.servlet.handler.SimpleServletPostProcessor" target="org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="611.5" y="373.0" />
+      <point x="1295.875" y="373.0" />
+      <point x="-96.875" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.ConfigurationClassPostProcessor.ImportAwareBeanPostProcessor" target="org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="5267.991666666667" y="222.0" />
+      <point x="3995.875" y="222.0" />
+      <point x="122.25" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="3873.6250000000005" y="141.0" />
+      <point x="3624.291666666667" y="141.0" />
+      <point x="8.666666666666515" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" target="org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor">
+      <point x="77.5" y="-15.5" />
+      <point x="1193.5859623015886" y="469.0" />
+      <point x="1601.5000000000002" y="469.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.CommonAnnotationBeanPostProcessorTests.InitDestroyBeanPostProcessor" target="org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="1271.5" y="393.0" />
+      <point x="1373.375" y="393.0" />
+      <point x="-19.375" y="15.5" />
+    </edge>
+    <edge source="org.springframework.jca.context.BootstrapContextAwareProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="1204.1593253968267" y="71.0" />
+      <point x="3546.291666666667" y="71.0" />
+      <point x="-69.33333333333348" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests.FallbackTestAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests.TestAutoProxyCreator">
+      <point x="0.0" y="-15.5" />
+      <point x="3598.541666666667" y="550.0" />
+      <point x="3497.041666666667" y="550.0" />
+      <point x="51.5" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="1392.75" y="212.0" />
+      <point x="1357.6593253968267" y="212.0" />
+      <point x="1357.6593253968267" y="81.0" />
+      <point x="3554.958333333334" y="81.0" />
+      <point x="-60.666666666666515" y="15.5" />
+    </edge>
+    <edge source="org.springframework.jms.annotation.JmsListenerAnnotationBeanPostProcessor" target="org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="2607.5" y="393.0" />
+      <point x="2926.699999999999" y="393.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.ImportAwareTests.BPP" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="5671.625" y="71.0" />
+      <point x="3684.958333333334" y="71.0" />
+      <point x="69.33333333333348" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests.TestAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
+      <point x="0.0" y="-15.5" />
+      <point x="3445.541666666667" y="469.0" />
+      <point x="4191.208333333334" y="469.0" />
+      <point x="-79.33333333333303" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator" target="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="4270.541666666667" y="383.0" />
+      <point x="4733.383581349208" y="383.0" />
+      <point x="-52.285714285714675" y="15.5" />
+    </edge>
+    <edge source="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" target="org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor">
+      <point x="116.66666666666652" y="-15.5" />
+      <point x="3248.2083333333335" y="393.0" />
+      <point x="3406.824999999999" y="393.0" />
+      <point x="3406.824999999999" y="232.0" />
+      <point x="3832.8750000000005" y="232.0" />
+      <point x="-40.75" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor" target="org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor">
+      <point x="-87.5" y="-15.5" />
+      <point x="1514.0000000000002" y="393.0" />
+      <point x="1412.125" y="393.0" />
+      <point x="19.375" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.ApplicationContextAwareProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="890.1593253968267" y="61.0" />
+      <point x="3537.6250000000005" y="61.0" />
+      <point x="-78.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.web.context.request.SessionScopeTests.CustomDestructionAwareBeanPostProcessor" target="org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="937.5" y="383.0" />
+      <point x="1334.625" y="383.0" />
+      <point x="-58.125" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.ApplicationListenerDetector" target="org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor">
+      <point x="65.5" y="-15.5" />
+      <point x="1993.0000000000002" y="373.0" />
+      <point x="2838.1285714285705" y="373.0" />
+      <point x="-88.57142857142844" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.weaving.LoadTimeWeaverAwareProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="4449.625" y="121.0" />
+      <point x="3641.6250000000005" y="121.0" />
+      <point x="26.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" target="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor">
+      <point x="81.5" y="-15.5" />
+      <point x="3936.791666666667" y="373.0" />
+      <point x="4681.097867063494" y="373.0" />
+      <point x="-104.57142857142844" y="15.5" />
+    </edge>
+    <edge source="org.springframework.orm.jpa.support.PersistenceInjectionTests.MockPersistenceAnnotationBeanPostProcessor" target="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator">
+      <point x="0.0" y="-15.5" />
+      <point x="3916.541666666667" y="550.0" />
+      <point x="4172.541666666667" y="550.0" />
+      <point x="-98.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.AbstractBeanFactoryAwareAdvisingPostProcessor" target="org.springframework.aop.framework.AbstractAdvisingBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests.IntroductionTestAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AutoProxyCreatorTests.TestAutoProxyCreator">
+      <point x="0.0" y="-15.5" />
+      <point x="3292.541666666667" y="550.0" />
+      <point x="3394.041666666667" y="550.0" />
+      <point x="-51.5" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.configuration.DuplicatePostProcessingTests.ExampleBeanPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="3167.6250000000005" y="131.0" />
+      <point x="3598.291666666667" y="131.0" />
+      <point x="-17.333333333333485" y="15.5" />
+    </edge>
+    <edge source="org.springframework.validation.beanvalidation.MethodValidationPostProcessor" target="org.springframework.aop.framework.autoproxy.AbstractBeanFactoryAwareAdvisingPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="6124.385962301589" y="393.0" />
+      <point x="6366.884970238096" y="393.0" />
+      <point x="-135.33333333333303" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.AbstractAdvisingBeanPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="6502.218303571429" y="61.0" />
+      <point x="3693.6250000000005" y="61.0" />
+      <point x="78.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="2926.699999999999" y="212.0" />
+      <point x="2607.5" y="212.0" />
+      <point x="2607.5" y="121.0" />
+      <point x="3589.6250000000005" y="121.0" />
+      <point x="-26.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.ProtectedLifecycleBean.PostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.test.web.servlet.samples.spr.EncodedUriTests.HandlerMappingConfigurer" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="4175.625" y="131.0" />
+      <point x="3632.958333333334" y="131.0" />
+      <point x="17.333333333333485" y="15.5" />
+    </edge>
+    <edge source="org.springframework.web.context.support.ServletContextAwareProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="1997.1875000000002" y="101.0" />
+      <point x="3572.291666666667" y="101.0" />
+      <point x="-43.333333333333485" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.ApplicationListenerDetector" target="org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor">
+      <point x="-65.5" y="-15.5" />
+      <point x="1862.0000000000002" y="353.0" />
+      <point x="1450.875" y="353.0" />
+      <point x="58.125" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.testfixture.beans.LifecycleBean.PostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="5001.625" y="101.0" />
+      <point x="3658.958333333334" y="101.0" />
+      <point x="43.333333333333485" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.support.PostProcessorRegistrationDelegate.BeanPostProcessorChecker" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="5497.625" y="81.0" />
+      <point x="3676.291666666667" y="81.0" />
+      <point x="60.666666666666515" y="15.5" />
+    </edge>
+    <edge source="org.springframework.web.context.request.SessionScopeTests.CustomSerializableDestructionAwareBeanPostProcessor" target="org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="237.5" y="363.0" />
+      <point x="1257.125" y="363.0" />
+      <point x="-135.625" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" target="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor">
+      <point x="83.5" y="-15.5" />
+      <point x="3588.791666666667" y="363.0" />
+      <point x="4628.8121527777785" y="363.0" />
+      <point x="-156.85714285714312" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.event.ApplicationContextEventTests.EventPublishingBeanPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="4755.625" y="111.0" />
+      <point x="3650.291666666667" y="111.0" />
+      <point x="34.666666666666515" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.support.Spr8954Tests.PredictingBPP" target="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="5507.166666666667" y="383.0" />
+      <point x="4890.240724206351" y="383.0" />
+      <point x="104.57142857142844" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor" target="org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor">
+      <point x="87.5" y="-15.5" />
+      <point x="1689.0000000000002" y="363.0" />
+      <point x="2793.8428571428567" y="363.0" />
+      <point x="-132.85714285714266" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator">
+      <point x="0.0" y="-15.5" />
+      <point x="4604.541666666667" y="550.0" />
+      <point x="4368.541666666667" y="550.0" />
+      <point x="98.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.configuration.ConfigurationClassProcessingTests.POBPP" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="6720.218303571429" y="51.0" />
+      <point x="3702.291666666667" y="51.0" />
+      <point x="86.66666666666652" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor" target="org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor">
+      <point x="-81.5" y="-15.5" />
+      <point x="3773.791666666667" y="303.0" />
+      <point x="3059.557142857142" y="303.0" />
+      <point x="132.85714285714312" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.adapter.AdvisorAdapterRegistrationManager" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="1687.1875000000002" y="91.0" />
+      <point x="3563.6250000000005" y="91.0" />
+      <point x="-52.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.InfrastructureAdvisorAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessorAdapter" target="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="4600.541666666667" y="393.0" />
+      <point x="4785.669295634922" y="393.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" target="org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor">
+      <point x="-77.5" y="-15.5" />
+      <point x="1038.5859623015886" y="469.0" />
+      <point x="0.0" y="469.0" />
+      <point x="0.0" y="222.0" />
+      <point x="3751.3750000000005" y="222.0" />
+      <point x="-122.25" y="15.5" />
+    </edge>
+    <edge source="org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor" target="org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor">
+      <point x="-83.5" y="-15.5" />
+      <point x="2162.0" y="343.0" />
+      <point x="1489.625" y="343.0" />
+      <point x="96.875" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" target="org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor" target="org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="4785.669295634922" y="232.0" />
+      <point x="3914.3750000000005" y="232.0" />
+      <point x="40.75" y="15.5" />
+    </edge>
+    <edge source="org.springframework.context.annotation.Spr8954Tests.PredictingBPP" target="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="5677.166666666667" y="373.0" />
+      <point x="4942.526438492065" y="373.0" />
+      <point x="156.85714285714312" y="15.5" />
+    </edge>
+    <edge source="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" target="org.springframework.beans.factory.config.DestructionAwareBeanPostProcessor">
+      <point x="-116.66666666666652" y="-15.5" />
+      <point x="3014.8750000000005" y="333.0" />
+      <point x="1528.375" y="333.0" />
+      <point x="135.625" y="15.5" />
+    </edge>
+    <edge source="org.springframework.scheduling.annotation.EnableAsyncTests.ExecutorPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="612.1593253968267" y="51.0" />
+      <point x="3528.958333333334" y="51.0" />
+      <point x="-86.66666666666652" y="15.5" />
+    </edge>
+    <edge source="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator" target="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
+      <point x="0.0" y="-15.5" />
+      <point x="4556.541666666667" y="469.0" />
+      <point x="4349.875" y="469.0" />
+      <point x="79.33333333333303" y="15.5" />
+    </edge>
+    <edge source="org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor" target="org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor">
+      <point x="83.5" y="-15.5" />
+      <point x="2329.0" y="383.0" />
+      <point x="2882.414285714285" y="383.0" />
+      <point x="-44.28571428571422" y="15.5" />
+    </edge>
+    <edge source="org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor" target="org.springframework.beans.factory.support.MergedBeanDefinitionPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="3131.541666666667" y="323.0" />
+      <point x="2970.9857142857136" y="323.0" />
+      <point x="44.28571428571422" y="15.5" />
+    </edge>
+    <edge source="org.springframework.beans.factory.xml.XmlBeanFactoryTests.WrappingPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="3413.6250000000005" y="141.0" />
+      <point x="3606.958333333334" y="141.0" />
+      <point x="-8.666666666666515" y="15.5" />
+    </edge>
+    <edge source="org.springframework.scheduling.annotation.AsyncAnnotationBeanPostProcessor" target="org.springframework.aop.framework.autoproxy.AbstractBeanFactoryAwareAdvisingPostProcessor">
+      <point x="0.0" y="-15.5" />
+      <point x="6434.385962301589" y="393.0" />
+      <point x="6502.218303571429" y="393.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0672266514806377" x="3502.000000000001" y="343.5" />
+  <SelectedNodes>
+    <node>org.springframework.beans.factory.FactoryBeanTests.CountingPostProcessor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
