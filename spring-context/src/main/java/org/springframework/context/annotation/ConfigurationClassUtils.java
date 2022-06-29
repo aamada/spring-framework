@@ -81,6 +81,10 @@ abstract class ConfigurationClassUtils {
 	 * @param beanDef the bean definition to check
 	 * @param metadataReaderFactory the current factory in use by the caller
 	 * @return whether the candidate qualifies as (any kind of) configuration class
+	 *
+	 * 这里有一个现在知道的重点, 就是那个配置类, 是完全配置类, 还是轻型配置类
+	 *
+	 * 它重要的区别是, 完全配置类, 会生成一个代理的配置类, 然后, 这个配置类, 会保证类的单例性
 	 */
 	public static boolean checkConfigurationClassCandidate(
 			BeanDefinition beanDef, MetadataReaderFactory metadataReaderFactory) {
