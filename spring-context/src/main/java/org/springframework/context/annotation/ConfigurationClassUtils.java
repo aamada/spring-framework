@@ -89,31 +89,38 @@ abstract class ConfigurationClassUtils {
 	public static boolean checkConfigurationClassCandidate(
 			BeanDefinition beanDef, MetadataReaderFactory metadataReaderFactory) {
 
+		// 得到这个配置类的类名称
 		String className = beanDef.getBeanClassName();
 		if (className == null || beanDef.getFactoryMethodName() != null) {
 			return false;
 		}
 
 		AnnotationMetadata metadata;
+		// 是注释bean定义 && className与bean定义的元数据中的classname相等
 		if (beanDef instanceof AnnotatedBeanDefinition &&
 				className.equals(((AnnotatedBeanDefinition) beanDef).getMetadata().getClassName())) {
 			// Can reuse the pre-parsed metadata from the given BeanDefinition...
+			// 直接从bean定义中获得元数据
 			metadata = ((AnnotatedBeanDefinition) beanDef).getMetadata();
 		}
+		// 可能是通过api添加进来的
 		else if (beanDef instanceof AbstractBeanDefinition && ((AbstractBeanDefinition) beanDef).hasBeanClass()) {
 			// Check already loaded Class if present...
 			// since we possibly can't even load the class file for this Class.
 			Class<?> beanClass = ((AbstractBeanDefinition) beanDef).getBeanClass();
+			// 不处理的几种情况
 			if (BeanFactoryPostProcessor.class.isAssignableFrom(beanClass) ||
 					BeanPostProcessor.class.isAssignableFrom(beanClass) ||
 					AopInfrastructureBean.class.isAssignableFrom(beanClass) ||
 					EventListenerFactory.class.isAssignableFrom(beanClass)) {
 				return false;
 			}
+			// 拿到元数据
 			metadata = AnnotationMetadata.introspect(beanClass);
 		}
 		else {
 			try {
+				// 得到元数据
 				MetadataReader metadataReader = metadataReaderFactory.getMetadataReader(className);
 				metadata = metadataReader.getAnnotationMetadata();
 			}
@@ -126,6 +133,7 @@ abstract class ConfigurationClassUtils {
 			}
 		}
 
+		// 设置这个类, 是完全配置, 还是轻配置类
 		// 获得这个类的configuration注解信息
 		Map<String, Object> config = metadata.getAnnotationAttributes(Configuration.class.getName());
 		// @Configuration(proxyBeanMethods = true) => 这样子, 就是完全配置类
@@ -144,6 +152,7 @@ abstract class ConfigurationClassUtils {
 			beanDef.setAttribute(CONFIGURATION_CLASS_ATTRIBUTE, CONFIGURATION_CLASS_LITE);
 		}
 		else {
+			// 如果都不是, 那么直接返回不是配置类
 			return false;
 		}
 
